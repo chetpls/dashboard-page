@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To.Two Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <a href="" class="logo">
+                <img src="images/logo.svg" alt="logo" class="logo-icon">
+                <div class="logo-name">To.Two</div>
+            </a>
+            <div class="menu">
+                <ul class="side-menu">
+                    <li><a href="#"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
+                    <li><a href="#"><i class='bx bx-server'></i>Server</a></li>
+                    <li class="active"><a href="#"><i class='bx bx-analyse'></i>Analytics</a></li>
+                    <li><a href="#"><i class='bx bx-message-square-dots'></i>Tickets</a></li>
+                    <li><a href="#"><i class='bx bx-group'></i>Users</a></li>
+                    <li><a href="#"><i class='bx bx-cog'></i>Settings</a></li>
+                </ul>
+                <ul class="side-menu">
+                    <li><a href="" class="logout"><i class='bx bx-log-out-circle'></i>Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="nav">
+                <nav>
+                    <div class="menu-icon">
+                        <i class='bx bx-menu'></i>
+                    </div>
+                    <form action="#">
+                        <div class="form-input">
+                            <input type="search" placeholder="Search...">
+                            <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                        </div>
+                    </form>
+                    <a href="#" class="notif">
+                        <i class='bx bx-bell'></i>
+                        <span class="count">12</span>
+                    </a>
+                    <a href="#" class="profile">
+                        <img src="images/profile.jpg" alt="profile">
+                    </a>
+                </nav>
+            </div>
+            <div class="content">
+                <div class="header">
+                    <div class="left-header">
+                        <p id="title">Dashboard</p>
+                        <p id="sub-title">Analytics / Server</p>
+                    </div>
+                    <div class="right-header">
+                        <button id="csv">
+                            <i class='bx bx-cloud-download'></i>Download CSV
+                        </button>
+                    </div>
+                </div>
+                <div class="stats">
+                    <div class="stat-card">
+                        <i class='bx bx-comment-add'></i>
+                        <div class="stat-info">
+                            <div class="number">1,593</div>
+                            <div class="detail">Rooms Created</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class='bx bx-show-alt'></i>
+                        <div class="stat-info">
+                            <div class="number">5,520</div>
+                            <div class="detail">Site Visits</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class='bx bx-line-chart'></i>
+                        <div class="stat-info">
+                            <div class="number">17,100</div>
+                            <div class="detail">Searches</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class='bx bx-dollar-circle'></i>
+                        <div class="stat-info">
+                            <div class="number">1,242</div>
+                            <div class="detail">Subscriptions</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-data">
+                    <div class="recent">
+                        <div class="bottom-data-header">
+                            <i class='bx bx-receipt' ></i>
+                            <div class="bottom-data-title">Recent Calls</div>
+                            <i class='bx bx-filter'></i>
+                            <i class='bx bx-search'></i>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>User</th>
+                                    <th>Call Date</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="images/profile.jpg">
+                                        <p>Jae Jo</p>
+                                    </td>
+                                    <td>06-10-2024</td>
+                                    <td><span class="status completed">Deleted</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="images/profile.jpg">
+                                        <p>Jae Jo</p>
+                                    </td>
+                                    <td>06-10-2024</td>
+                                    <td><span class="status pending">Joined</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="images/profile.jpg">
+                                        <p>Jae Jo</p>
+                                    </td>
+                                    <td>06-10-2024</td>
+                                    <td><span class="status process">Created</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="reminders">
+                        <div class="bottom-data-header">
+                            <i class='bx bx-note'></i>
+                            <div class="bottom-data-title">Reminders</div>
+                            <i class='bx bx-filter'></i>
+                            <i class='bx bx-search'></i>
+                        </div>
+                        <ul class="task-list">
+                            <li class="completed">
+                                <div class="task-title">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p>Start Our Meeting</p>
+                                </div>
+                                <i class='bx bx-dots-vertical-rounded'></i>
+                            </li>
+                            <li class="completed">
+                                <div class="task-title">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p>Analyse Our Site</p>
+                                </div>
+                                <i class='bx bx-dots-vertical-rounded'></i>
+                            </li>
+                            <li class="not-completed">
+                                <div class="task-title">
+                                    <i class='bx bx-x-circle'></i>
+                                    <p>Play Games</p>
+                                </div>
+                                <i class='bx bx-dots-vertical-rounded'></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
